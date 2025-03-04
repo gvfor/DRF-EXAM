@@ -1,0 +1,50 @@
+# api for creating user
+###
+POST http://127.0.0.1:8000/api/users/
+Content-Type: application/json
+
+{
+    "username": "nihal",
+    "email": "nihal@gmail.com",
+    "password": "user"
+}
+
+#api for adding meals
+###
+POST http://127.0.0.1:8000/api/meals/
+Content-Type: application/json
+Authorization: Basic nihal:user
+
+{
+    "name": "rice",
+    "meal_type":"Lunch",
+    "calories": 1000
+
+}
+
+# api for listing all meals
+###
+GET http://127.0.0.1:8000/api/meals/
+Authorization: Basic nihal:user
+
+
+# api for updating meals
+###
+PUT http://127.0.0.1:8000/api/meals/
+Content-Type: application/json
+Authorization: Basic nihal:user
+
+{
+    "id": 1,
+    "name": "chicken",
+    "meal_type":"Breakfast",
+    "calories": 1000
+
+}
+
+# api for deleting meals
+###
+DELETE http://127.0.0.1:8000/api/meals/
+Content-Type: application/json
+Authorization: Basic nihal:user
+
