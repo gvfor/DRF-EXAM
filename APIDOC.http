@@ -48,3 +48,12 @@ DELETE http://127.0.0.1:8000/api/meals/
 Content-Type: application/json
 Authorization: Basic nihal:user
 
+# api for retriving meals by date and meal type
+###
+GET http://127.0.0.1:8000/api/meals/
+Authorization: nihal:user
+
+# api for calorie summary
+###
+GET http://127.0.0.1:8000/api/summary/
+Authorization: Basic nihal:user
