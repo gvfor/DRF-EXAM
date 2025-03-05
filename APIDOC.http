@@ -30,7 +30,7 @@ Authorization: Basic nihal:user
 
 # api for updating meals
 ###
-PUT http://127.0.0.1:8000/api/meals/
+PUT http://127.0.0.1:8000/api/meals/1/
 Content-Type: application/json
 Authorization: Basic nihal:user
 

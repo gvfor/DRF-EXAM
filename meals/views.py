@@ -74,7 +74,7 @@ class Mealsummaryview(APIView):
         category_summary=Meal.objects.filter(owner=request.user).values("meal_type").annotate(total=Sum("meal_type"))
 
         context={
-            "expense_total":total_calorie.get("total"),
+            "calorie_total":total_calorie.get("total"),
             "category_summary":category_summary
         }
 
